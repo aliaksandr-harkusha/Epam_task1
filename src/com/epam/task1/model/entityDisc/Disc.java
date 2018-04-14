@@ -1,4 +1,4 @@
-package com.epam.task1.entity;
+package com.epam.task1.model.entityDisc;
 
 import com.epam.task1.model.song.Song;
 import com.epam.task1.service.IMusicService;

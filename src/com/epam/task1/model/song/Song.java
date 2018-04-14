@@ -3,7 +3,7 @@ package com.epam.task1.model.song;
 import com.epam.task1.model.author.Author;
 import com.epam.task1.model.style.Style;
 
-public class Song extends AbstractSong{
+public class Song{
 
     private Author author;
 

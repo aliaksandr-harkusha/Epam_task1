@@ -1,7 +1,7 @@
 package com.epam.task1.main;
 
 import com.epam.task1.FileUtils.DataInitializerFromFile;
-import com.epam.task1.entity.Disc;
+import com.epam.task1.model.entityDisc.Disc;
 import com.epam.task1.model.song.Song;
 import com.epam.task1.model.style.Style;
 
