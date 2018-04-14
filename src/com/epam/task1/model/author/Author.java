@@ -1,4 +1,4 @@
-package com.epam.task1;
+package com.epam.task1.model.author;
 
 public class Author {
 

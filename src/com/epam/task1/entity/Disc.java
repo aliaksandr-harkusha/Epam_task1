@@ -1,5 +1,6 @@
-package com.epam.task1;
+package com.epam.task1.entity;
 
+import com.epam.task1.model.song.Song;
 import com.epam.task1.service.MusicService;
 
 import java.util.ArrayList;
