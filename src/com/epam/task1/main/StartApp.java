@@ -9,10 +9,12 @@ import java.util.ArrayList;
 
 public class StartApp {
 
+    public static final String BEFORE = "Before Sorting:";
+    public static final String AFTER = "After Sorting:";
 
     public static void main(String[] args) {
 
-        ArrayList<Song> songs = DataInitializerFromFile.initData();
+        ArrayList<Song> songs = DataInitializerFromFile.initData("data.txt");
 
 //                  HARDCODE if file doesn't work
 //        songs.add(new Song(new Author("Dethklok"), "Awaken" , 3*60+37, Style.Rock));
@@ -25,21 +27,25 @@ public class StartApp {
         Disc disc = new Disc(songs);
 
         disc.getMusicService().getDuration(disc.getSongs());
+
         disc.getMusicService().getSongByRange(disc.getSongs(), 40, 500);
 
+        System.out.println(BEFORE);
 
-        System.out.println("Before Sorting:");
         for (Song song : disc.getSongs()) {
             System.out.print(song.getName() + " ");
         }
+
         System.out.println();
 
         disc.getMusicService().sortByStyle(disc.getSongs(), Style.Rock);
 
-        System.out.println("After Sorting:");
+        System.out.println(AFTER);
 
         for (Song song : disc.getSongs()) {
+
             System.out.print(song.getName() + " ");
+
         }
 
     }

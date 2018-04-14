@@ -3,7 +3,7 @@ package com.epam.task1.model.song;
 import com.epam.task1.model.author.Author;
 import com.epam.task1.model.style.Style;
 
-public class Song{
+public class Song {
 
     private Author author;
 
@@ -21,15 +21,9 @@ public class Song{
         this.style = style;
     }
 
-    @Override
-    public String toString() {
-        return "Song{" +
-                "author=" + author +
-                ", songName='" + songName + '\'' +
-                ", duration=" + duration +
-                ", style=" + style +
-                '}';
-    }
+    /**
+     * getters and setters
+     */
 
     public void setAuthor(Author author) {
         this.author = author;
@@ -61,5 +55,17 @@ public class Song{
 
     public Style getStyle() {
         return style;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "author=" + author +
+                ", songName='" + songName + '\'' +
+                ", duration=" + duration +
+                ", style=" + style +
+                '}';
     }
 }

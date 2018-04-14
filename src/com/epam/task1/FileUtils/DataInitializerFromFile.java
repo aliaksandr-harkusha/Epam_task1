@@ -12,15 +12,18 @@ import java.util.ArrayList;
 
 public class DataInitializerFromFile {
 
-    public static ArrayList initData() {
+
+    /**
+     *
+     * @return list with Songs
+     */
+    public static ArrayList initData(String fileName) {
 
         ArrayList<Song> list = new ArrayList<>();
 
-        BufferedReader bufferedReader = null;
-
         try {
 
-            bufferedReader = new BufferedReader(new FileReader("data.txt"));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
 
             while (bufferedReader.ready()) {
 
@@ -37,8 +40,6 @@ public class DataInitializerFromFile {
             e.printStackTrace();
         }
 
-
         return list;
-
     }
 }
