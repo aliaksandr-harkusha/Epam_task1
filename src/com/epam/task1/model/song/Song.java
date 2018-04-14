@@ -7,7 +7,7 @@ public class Song extends AbstractSong{
 
     private Author author;
 
-    private String name;
+    private String songName;
 
     private double duration;
 
@@ -16,7 +16,7 @@ public class Song extends AbstractSong{
 
     public Song(Author author, String name, double duration, Style style) {
         this.author = author;
-        this.name = name;
+        this.songName = name;
         this.duration = duration;
         this.style = style;
     }
@@ -29,7 +29,7 @@ public class Song extends AbstractSong{
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.songName = name;
     }
 
     public void setDuration(double duration) {
@@ -45,7 +45,7 @@ public class Song extends AbstractSong{
     }
 
     public String getName() {
-        return name;
+        return songName;
     }
 
     public double getDuration() {
