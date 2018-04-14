@@ -9,12 +9,12 @@ public class Song extends AbstractSong{
 
     private String songName;
 
-    private double duration;
+    private int duration;
 
     private Style style;
 
 
-    public Song(Author author, String name, double duration, Style style) {
+    public Song(Author author, String name, int duration, Style style) {
         this.author = author;
         this.songName = name;
         this.duration = duration;
@@ -32,7 +32,7 @@ public class Song extends AbstractSong{
         this.songName = name;
     }
 
-    public void setDuration(double duration) {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
 
@@ -48,7 +48,7 @@ public class Song extends AbstractSong{
         return songName;
     }
 
-    public double getDuration() {
+    public int getDuration() {
         return duration;
     }
 

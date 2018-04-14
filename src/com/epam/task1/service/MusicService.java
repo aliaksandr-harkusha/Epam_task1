@@ -10,28 +10,28 @@ public class MusicService implements IMusicService {
 
 
     @Override
-    public double getDuration(List<Song> songList) {
+    public int getDuration(List<Song> songList) {
 
-        double durationOfAllSongs = 0;
+        int durationOfAllSongs = 0;
 
         for (Song song : songList) {
             durationOfAllSongs += song.getDuration();
 
         }
 
-        System.out.printf("Total duration is %d", durationOfAllSongs);
+        System.out.printf("Total duration is %d\n", durationOfAllSongs);
 
         return durationOfAllSongs;
     }
 
 
     @Override
-    public void getSongByRange(List<Song> songList, double from, double to) {
+    public void getSongByRange(List<Song> songList, int from, int to) {
 
 
         for (Song song : songList) {
             if ((song.getDuration() <= to) && (song.getDuration() >= from)) {
-                System.out.printf("Song %s lasts %d \n", song.getName(), song.getDuration());
+                System.out.printf("Song '%s' lasts %d seconds \n", song.getName(), song.getDuration());
             }
         }
 
@@ -54,6 +54,11 @@ public class MusicService implements IMusicService {
                 copyArrayList.add(song);
             }
         }
+
+        songList.clear();
+
+        songList.addAll(copyArrayList);
+
 
 
     }

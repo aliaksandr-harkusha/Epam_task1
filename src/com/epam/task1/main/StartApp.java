@@ -24,6 +24,22 @@ public class StartApp {
         Disc disc = new Disc(songs);
 
         disc.getMusicService().getDuration(disc.getSongs());
+        disc.getMusicService().getSongByRange(disc.getSongs(),40,500);
+
+
+        System.out.println("Before Sorting:");
+        for (Song song : disc.getSongs()) {
+            System.out.print(song.getName() + " ");
+        }
+        System.out.println();
+
+        disc.getMusicService().sortByStyle(disc.getSongs(),Style.Rock);
+
+        System.out.println("After Sorting:");
+
+        for (Song song : disc.getSongs()) {
+            System.out.print(song.getName()+ " ");
+        }
 
     }
 }
