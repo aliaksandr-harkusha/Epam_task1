@@ -21,8 +21,15 @@ public class Song extends AbstractSong{
         this.style = style;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Song{" +
+                "author=" + author +
+                ", songName='" + songName + '\'' +
+                ", duration=" + duration +
+                ", style=" + style +
+                '}';
+    }
 
     public void setAuthor(Author author) {
         this.author = author;
