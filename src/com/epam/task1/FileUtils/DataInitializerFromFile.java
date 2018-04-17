@@ -16,6 +16,7 @@ public class DataInitializerFromFile {
     /**
      *
      * @return list with Songs
+     * read file , parse it and give ready list
      */
     public static ArrayList initData(String fileName) {
 
