@@ -16,7 +16,7 @@ public class StartApp {
 
         ArrayList<Song> songs = DataInitializerFromFile.initData("data.txt");
 
-//                  HARDCODE if file doesn't work
+//                  HARDCODE for debug
 //        songs.add(new Song(new Author("Dethklok"), "Awaken" , 3*60+37, Style.Rock));
 //        songs.add(new Song(new Author("Kauan"), "Sat" , 6*60+13, Style.Rap));
 //        songs.add(new Song(new Author("Gangsters Paradise"), "Like A Storm" , 3*60+27, Style.Pop));
