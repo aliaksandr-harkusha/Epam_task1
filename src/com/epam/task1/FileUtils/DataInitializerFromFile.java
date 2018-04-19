@@ -1,5 +1,7 @@
-package com.epam.task1.FileUtils;
-
+package com.epam.task1.FileUtils; // наименование пакетов: 
+                                  //1. все буквы маленькие
+                                  //2. единственное число
+                                  //у тебя нарушено и первое и второе
 import com.epam.task1.model.author.Author;
 import com.epam.task1.model.song.Song;
 import com.epam.task1.model.style.Style;
